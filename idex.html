@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Tugas</title>
+    <link rel="stylesheet" href="stayl.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Tugas</h1>
+
+        <!-- Input dan tombol tambah tugas -->
+        <input type="text" id="newTask" placeholder="Tambahkan tugas baru">
+        <button onclick="addTask()">Tambah Tugas</button>
+
+        <!-- Daftar tugas -->
+        <ul id="taskList"></ul>
+
+        <!-- Tombol untuk mengubah tampilan -->
+        <div class="tombol-tampilan">
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+            <button onclick="increaseFontSize()">Perbesar Font</button>
+            <button onclick="decreaseFontSize()">Perkecil Font</button>
+        </div>
+
+        <!-- Pemilihan warna latar belakang -->
+        <label for="colorSelector">Pilih Warna Background:</label>
+        <input type="color" id="colorSelector" onchange="changeBackgroundColor()">
+
+        <!-- Pemilihan gaya font -->
+        <label for="fontchange">Pilih Gaya Font:</label>
+        <select id="fontchange" onchange="changeFontStyle()">
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+    </div>
+
+    <script src="script.jav"></script>
+</body>
+</html>

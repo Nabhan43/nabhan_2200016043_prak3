@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#taskList li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#taskList .close {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tombol-tampilan button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
